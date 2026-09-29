@@ -1,0 +1,426 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --gold-color: #CCBD99;
+    --dark-color: #21263A;
+    --blue-color: #141B32;
+}
+
+.container {
+    max-width: 1200px !important;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-family: "Jost", sans-serif;
+}
+
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #1C2442;
+
+}
+
+
+
+/*--NAVBAR SECTION START--*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #111933;
+    /* navbar color */
+    transition: all .3s ease;
+    border-bottom: 1px #d1b37a solid;
+
+
+}
+
+/* Logo */
+.navbar img {
+    width: 70px;
+    height: auto;
+}
+
+/* Menu Links */
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    margin: 0px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #d1b37a;
+}
+
+/* Body top space */
+body {
+    padding-top: 80px;
+}
+
+/*--NAVBAR SECTION END--*/
+
+
+
+
+
+/*--HERO SECTION START--*/
+.hero {
+    background:
+        linear-gradient(rgba(17, 26, 49, 0.75),
+            rgba(17, 26, 49, 0.75)),
+        url("../img/aboutus_ban.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.hero h1,
+.hero p {
+    color: #fff;
+    ;
+}
+
+.hero a{
+     color: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, -0.5);
+    height: 100%;
+}
+
+.gold {
+    color: #c9a46b;
+}
+
+/*--HERO SECTION END--*/
+
+
+
+
+/* ATTORNEY SECTION START*/
+.team-section {
+    padding: 100px 0px 200px 0px;
+}
+
+.team-title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.team-text {
+    color: #d8d8d8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, .15);
+    cursor: pointer;
+
+}
+
+.team-card img {
+    height: 360px;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+}
+
+/* Name Section */
+.info-box {
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+    transition: .4s ease;
+    /* border-style: solid;
+    border-image: linear-gradient(to right, #ffffff40, #ffffff00) 1; */
+}
+
+
+
+
+
+.info-box h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.info-box span {
+    font-size: 18px;
+}
+
+/* Social Section Hidden */
+.social-box {
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin-top: -32px;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .4s ease;
+}
+
+.social-box a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-box a:hover {
+    color: #d1b37a;
+}
+
+/* Hover Effect */
+.team-card:hover .social-box {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-card:hover .info-box {
+    transform: translateY(-70px);
+}
+
+
+/* ATTORNEY SECTION END*/
+
+
+
+
+/*FOOTER SECTION START*/
+
+.footer-section {
+    background: #111933;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+.contact-info {
+    background: #c59a62;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+
+.footer-box {
+    background: rgba(255, 255, 255, .08);
+    border-radius: 40px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social i {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social i:hover {
+    color: #d1b37a;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+.footer-section a:hover {
+    color: #d1b37a;
+}
+
+.footer-section h1 {
+    font-size: 32px;
+    color: #c59a62;
+    margin-bottom: 24px;
+}
+
+.footer-section p {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-box {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+/*FOOTER SECTION END*/
+
+
+
+
+
+
+@media(max-width:1024px) {
+    .hero-title {
+        font-size: 46px;
+    }
+
+    .about-title,
+    .practice-title,
+    .team-title,
+    .faq-title,
+    .testimonial-title {
+        font-size: 38px;
+    }
+
+    .case-box {
+        padding: 15px 38px;
+    }
+
+    .footer-section h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 991.98px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-collapse {
+        background: #202847;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar img {
+        width: 60px;
+    }
+
+    .team-title {
+        font-size: 32px;
+    }
+
+    .team-card img {
+        height: 420px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+
+    body{
+        padding-top: 80px;
+    }
+
+    .navbar img{
+        width: 60px;
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+    }
+
+    .team-title {
+        font-size: 32px;
+    }
+
+    .info-box h4 {
+        font-size: 22px;
+    }
+
+    .info-box span {
+        font-size: 15px;
+    }
+
+    .social-box a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    .contact-info .text-center {
+        text-align: left !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,378 @@
+* {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  --gold-color: #CCBD99;
+  --dark-color: #21263A;
+  --blue-color: #141B32;
+}
+
+.container {
+  max-width: 1200px !important;
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-family: "Jost", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+
+  margin: 0px;
+  padding: 0px;
+  background-color: #1C2442;
+
+}
+
+
+
+/*--NAVBAR SECTION START--*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #111933; /* navbar color */
+    transition: all .3s ease;
+    border-bottom: 1px #d1b37a solid;
+    
+    
+}
+
+/* Logo */
+.navbar img{
+    width: 70px;
+    height: auto;
+}
+
+/* Menu Links */
+.navbar .nav-link{
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    margin: 0px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color: #d1b37a;
+}
+
+/* Body top space */
+body{
+    padding-top: 80px;
+}
+
+/*--NAVBAR SECTION END--*/
+
+
+
+
+/*--HERO SECTION START--*/
+.hero {
+  background:
+    linear-gradient(rgba(17, 26, 49, 0.75),
+      rgba(17, 26, 49, 0.75)),
+    url("../img/aboutus_ban.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.hero h1, .hero p{
+  color: #fff;;
+}
+
+.hero a{
+     color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, -0.5);
+  height: 100%;
+}
+
+.gold {
+  color: #c9a46b;
+}
+/*--HERO SECTION END--*/
+
+
+
+/* PRACTICE SECTION START*/
+.practice-section {
+    background: #1C2442;
+    padding: 100px 0px 200px 0px;
+}
+
+.practice-subtitle {
+    color: var(--gold-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.practice-title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+
+.practice-text {
+    color: #ddd;
+    font-size: 17px;
+}
+
+.practice-card {
+    background: #111933;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px 30px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.practice-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold-color);
+}
+
+.practice-icon {
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.practice-icon i {
+    color: var(--gold-color);
+    font-size: 32px;
+}
+
+.practice-card h2 {
+    color: var(--gold-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.practice-card p {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.practice-card a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.practice-card a:hover {
+    color: var(--gold-color);
+}
+
+/* PRACTICE SECTION END*/
+
+
+
+/*FOOTER SECTION START*/
+
+.footer-section {
+    background: #111933;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+.contact-info {
+    background: #c59a62;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+
+.footer-box {
+    background: rgba(255, 255, 255, .08);
+    border-radius: 40px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social i {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social i:hover {
+    color: #d1b37a;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+.footer-section a:hover {
+    color: #d1b37a;
+}
+
+.footer-section h1 {
+    font-size: 32px;
+    color: #c59a62;
+    margin-bottom: 24px;
+}
+
+.footer-section p {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-box {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+/*FOOTER SECTION END*/
+
+
+
+
+
+
+@media(max-width:1024px) {
+    .hero-title {
+        font-size: 46px;
+    }
+
+    .about-title,
+    .practice-title,
+    .team-title,
+    .faq-title,
+    .testimonial-title {
+        font-size: 38px;
+    }
+
+    .case-box {
+        padding: 15px 38px;
+    }
+
+        .footer-section h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 991.98px){
+
+    .navbar{
+        padding: 12px 0;
+    }
+
+    .navbar-collapse{
+        background: #202847;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav{
+        gap: 0 !important;
+    }
+
+    .navbar-nav .nav-item{
+        margin: 5px 0;
+    }
+
+    .navbar img{
+        width: 60px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+        .about-title,
+    .practice-title,
+    .team-title,
+    .faq-title,
+    .testimonial-title {
+        font-size: 32px;
+    }
+
+    .practice-card a{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+@media (max-width: 576px){
+
+    body{
+        padding-top: 80px;
+    }
+
+    .navbar img{
+        width: 60px;
+    }
+
+    .navbar-toggler{
+        padding: 4px 8px;
+    }
+
+        .contact-info .text-center {
+        text-align: left !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+

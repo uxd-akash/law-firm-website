@@ -1,0 +1,376 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --gold-color: #CCBD99;
+    --dark-color: #21263A;
+    --blue-color: #141B32;
+}
+
+.container {
+    max-width: 1200px !important;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-family: "Jost", sans-serif;
+}
+
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #1C2442;
+
+}
+
+
+
+/*--NAVBAR SECTION START--*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #111933;
+    /* navbar color */
+    transition: all .3s ease;
+    border-bottom: 1px #d1b37a solid;
+
+
+}
+
+/* Logo */
+.navbar img {
+    width: 70px;
+    height: auto;
+}
+
+/* Menu Links */
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    margin: 0px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #d1b37a;
+}
+
+/* Body top space */
+body {
+    padding-top: 80px;
+}
+
+/*--NAVBAR SECTION END--*/
+
+
+
+
+/*--HERO SECTION START--*/
+.hero {
+    background:
+        linear-gradient(rgba(17, 26, 49, 0.75),
+            rgba(17, 26, 49, 0.75)),
+        url("../img/aboutus_ban.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.hero h1,
+.hero p {
+    color: #fff;
+}
+
+.hero a{
+     color: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, -0.5);
+    height: 100%;
+}
+
+.gold {
+    color: #c9a46b;
+}
+
+/*--HERO SECTION END--*/
+
+
+
+/*--CONTACT SECTION START--*/
+.contact-section {
+    padding: 100px 0px 150px 0px;
+}
+
+.contact-info-box {
+    background: #0f1a42;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, .08);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.contact-info-box h5 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.contact-info-box p {
+    color: #d7d7d7;
+    margin: 0;
+    font-size: 14px;
+}
+
+.contact-form-box {
+    background: #0f1a42;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.custom-input {
+    background: rgba(255, 255, 255, .05);
+    border: none;
+    color: #fff;
+    padding: 12px 15px;
+}
+
+.custom-input:focus {
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+
+.custom-input::placeholder {
+    color: #bdbdbd;
+}
+
+.send-btn {
+    background: #c9a46b;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/*--CONTACT SECTION END--*/
+
+
+
+
+/*FOOTER SECTION START*/
+.footer-section {
+    background: #111933;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+.contact-info {
+    background: #c59a62;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+
+.footer-box {
+    background: rgba(255, 255, 255, .08);
+    border-radius: 40px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social i {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social i:hover {
+    color: #d1b37a;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+.footer-section a:hover {
+    color: #d1b37a;
+}
+
+.footer-section h1 {
+    font-size: 32px;
+    color: #c59a62;
+    margin-bottom: 24px;
+}
+
+.footer-section p {
+    color: #fff;
+}
+
+.footer-box {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+/*FOOTER SECTION END*/
+
+
+
+
+
+
+
+/* Responsive */
+@media(max-width:1024px) {
+    .hero-title {
+        font-size: 46px;
+    }
+
+    .about-title,
+    .practice-title,
+    .team-title,
+    .faq-title,
+    .testimonial-title {
+        font-size: 38px;
+    }
+
+    .case-box {
+        padding: 15px 38px;
+    }
+
+    .footer-section h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-collapse {
+        background: #202847;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar img {
+        width: 60px;
+    }
+
+    .contact-info-box {
+        margin-bottom: 15px;
+    }
+
+    .contact-form-box {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    .navbar img {
+        width: 60px;
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+    }
+
+    .contact-info-box {
+        padding: 15px;
+    }
+
+    .contact-form-box {
+        padding: 20px;
+    }
+
+    .contact-info .text-center {
+        text-align: left !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
